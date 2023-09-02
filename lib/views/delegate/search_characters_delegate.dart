@@ -87,10 +87,13 @@ class SearchCharacterDelegate extends SearchDelegate<CharactersModel?> {
                 }));
               },
               child: FadeIn(
-                child: CardView(
-                  title: character.name,
-                  image: character.image,
-                  subtitle: character.status,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: CardView(
+                    title: character.name,
+                    image: character.image,
+                    subtitle: character.status,
+                  ),
                 ),
               ),
             );

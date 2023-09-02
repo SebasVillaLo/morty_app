@@ -86,10 +86,13 @@ class SearchEpisodeDelegate extends SearchDelegate<EpisodeModel?> {
                   );
                 }));
               },
-              child: FadeIn(
-                child: CardView(
-                  title: episode.name,
-                  subtitle: episode.episode,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 14),
+                child: FadeIn(
+                  child: CardView(
+                    title: episode.name,
+                    subtitle: episode.episode,
+                  ),
                 ),
               ),
             );

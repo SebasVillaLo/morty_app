@@ -87,9 +87,12 @@ class SearchLocationDelegate extends SearchDelegate<LocationModel?> {
                 }));
               },
               child: FadeIn(
-                child: CardView(
-                  title: location.name,
-                  subtitle: location.type,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: CardView(
+                    title: location.name,
+                    subtitle: location.type,
+                  ),
                 ),
               ),
             );
